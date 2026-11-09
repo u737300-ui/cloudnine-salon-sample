@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cloudnine Beauty Salon — Wellawatte, Colombo</title>
+<meta name="description" content="Cloudnine Beauty Salon, Wellawatte, Colombo — rated 4.8★ from 596 Google reviews. Hair, facials, manicure & pedicure, waxing, threading and makeup. Open daily 8:30 AM – 7 PM. Book on WhatsApp.">
+<meta name="theme-color" content="#083f4d">
+
+<!-- Link preview (Open Graph) -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Cloudnine Beauty Salon">
+<meta property="og:url" content="https://u737300-ui.github.io/cloudnine-salon-sample/">
+<meta property="og:title" content="Cloudnine Beauty Salon — Wellawatte, Colombo">
+<meta property="og:description" content="Wellawatte's loved beauty salon — 4.8★ from 596 Google reviews. Hair, facials, manicure & pedicure, waxing, threading & makeup on Galle Road, Wellawatte. Open daily 8:30 AM–7 PM — book on WhatsApp.">
+<meta property="og:image" content="https://u737300-ui.github.io/cloudnine-salon-sample/img/og-cover.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Inside Cloudnine Beauty Salon, Colombo">
+
+<!-- Twitter card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Cloudnine Beauty Salon — Wellawatte, Colombo">
+<meta name="twitter:description" content="Wellawatte's loved beauty salon — 4.8★ from 596 Google reviews. Hair, facials, manicure & pedicure, waxing, threading & makeup on Galle Road, Wellawatte. Open daily 8:30 AM–7 PM — book on WhatsApp.">
+<meta name="twitter:image" content="https://u737300-ui.github.io/cloudnine-salon-sample/img/og-cover.jpg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --brand:#083f4d; --brand-2:#0d5568; --brand-3:#127187;
+    --gold:#dfae5e; --gold-soft:#f0d49a; --ivory:#f4fafc; --cream:#e7f2f4;
+    --ink:#22333a; --muted:#687f88; --wa:#1faa55; --wa-dark:#178a44;
+    --shadow:0 10px 30px rgba(8,63,77,.14);
+    --radius:16px;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:'Jost',system-ui,-apple-system,'Segoe UI',sans-serif;color:var(--ink);background:var(--ivory);line-height:1.6;-webkit-font-smoothing:antialiased}
+  img{display:block;max-width:100%}
+  a{text-decoration:none;color:inherit}
+  .wrap{max-width:1140px;margin:0 auto;padding:0 20px}
+  h1,h2,h3,.serif{font-family:'Playfair Display',Georgia,'Times New Roman',serif}
+  .eyebrow{letter-spacing:.28em;text-transform:uppercase;font-size:.72rem;font-weight:600;color:var(--gold)}
+  .section{padding:72px 0}
+  .section-head{text-align:center;max-width:640px;margin:0 auto 42px}
+  .section-head h2{font-size:2rem;font-weight:600;color:var(--brand);margin:8px 0 10px}
+  .section-head p{color:var(--muted)}
+  .gold-rule{width:64px;height:2px;background:var(--gold);margin:14px auto 0;border-radius:2px}
+
+  /* Header */
+  header{position:sticky;top:0;z-index:50;background:rgba(8,63,77,.97);backdrop-filter:blur(6px);box-shadow:0 2px 14px rgba(0,0,0,.25)}
+  .nav{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:12px 0}
+  .brand{color:#fff;line-height:1.1}
+  .brand .b-name{font-family:'Playfair Display',Georgia,serif;font-size:1.45rem;font-weight:700;letter-spacing:.04em}
+  .brand .b-name span{color:var(--gold)}
+  .brand .b-sub{font-size:.62rem;letter-spacing:.3em;text-transform:uppercase;color:var(--gold-soft)}
+  .nav-links{display:none;gap:26px;color:#dff0f3;font-size:.92rem;font-weight:500}
+  .nav-links a:hover{color:var(--gold)}
+  .nav-cta{display:inline-flex;align-items:center;gap:8px;background:var(--wa);color:#fff;font-weight:600;font-size:.9rem;padding:9px 16px;border-radius:999px;white-space:nowrap}
+  .nav-cta:hover{background:var(--wa-dark)}
+  @media(min-width:860px){.nav-links{display:flex}}
+
+  /* Buttons */
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;font-weight:600;font-size:1rem;padding:14px 26px;border-radius:999px;border:0;cursor:pointer;transition:transform .15s ease,background .15s ease;text-align:center}
+  .btn:active{transform:scale(.98)}
+  .btn-wa{background:var(--wa);color:#fff}
+  .btn-wa:hover{background:var(--wa-dark)}
+  .btn-call{background:#fff;color:var(--brand)}
+  .btn-call:hover{background:var(--cream)}
+  .btn-gold{background:var(--gold);color:var(--brand)}
+  .btn-gold:hover{background:#c9973f}
+  .btn-book{background:var(--brand);color:#fff;width:100%;padding:11px 18px;font-size:.95rem}
+  .btn-book:hover{background:var(--brand-3)}
+
+  /* Hero */
+  .hero{position:relative;color:#fff;overflow:hidden}
+  .hero::before{content:"";position:absolute;inset:0;background:url('img/hero.jpg') center 30%/cover no-repeat}
+  .hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,63,77,.80) 0%,rgba(8,63,77,.62) 45%,rgba(5,38,47,.90) 100%)}
+  .hero-in{position:relative;z-index:2;text-align:center;padding:84px 0 74px;max-width:760px;margin:0 auto}
+  .hero h1{font-size:2.6rem;line-height:1.12;font-weight:700;margin:14px 0 6px}
+  .hero h1 em{color:var(--gold-soft);font-style:italic}
+  .hero .hero-sub{font-size:1.08rem;color:#eef6f8;max-width:560px;margin:10px auto 0;font-weight:300}
+  .badge{display:inline-flex;align-items:center;gap:9px;background:rgba(255,255,255,.12);border:1px solid rgba(240,212,154,.65);color:#fff;padding:8px 18px;border-radius:999px;font-size:.95rem;font-weight:500;margin-top:24px}
+  .badge .stars{color:var(--gold);letter-spacing:2px}
+  .hero-btns{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:30px}
+  .hero-note{margin-top:18px;font-size:.9rem;color:#dceef1}
+
+  /* Trust strip */
+  .strip{background:var(--brand);color:#eef6f8}
+  .strip-in{display:grid;grid-template-columns:1fr;gap:6px;text-align:center;padding:18px 0;font-size:.95rem}
+  .strip-in strong{color:var(--gold-soft);font-weight:600}
+  @media(min-width:760px){.strip-in{grid-template-columns:repeat(3,1fr)}}
+
+  /* Services */
+  .grid{display:grid;grid-template-columns:1fr;gap:22px}
+  @media(min-width:620px){.grid{grid-template-columns:repeat(2,1fr)}}
+  @media(min-width:980px){.grid{grid-template-columns:repeat(4,1fr)}}
+  .card{background:#fff;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);display:flex;flex-direction:column;border:1px solid #d7e7ea}
+  .card img{width:100%;height:180px;object-fit:cover}
+  .card-body{padding:18px 18px 20px;display:flex;flex-direction:column;gap:8px;flex:1}
+  .card h3{font-size:1.18rem;color:var(--brand);font-weight:600}
+  .card p{color:var(--muted);font-size:.94rem;flex:1}
+
+  /* Feature */
+  .feature{background:var(--brand);color:#fff}
+  .feature-in{display:grid;grid-template-columns:1fr;gap:34px;align-items:center}
+  @media(min-width:880px){.feature-in{grid-template-columns:1fr 1fr}}
+  .feature img{border-radius:var(--radius);width:100%;height:100%;max-height:460px;object-fit:cover;box-shadow:0 18px 40px rgba(0,0,0,.35)}
+  .feature h2{font-size:2rem;font-weight:600;margin:8px 0 12px}
+  .feature p{color:#e4f1f4;font-weight:300}
+  .feature ul{list-style:none;margin:20px 0 28px;display:grid;gap:12px}
+  .feature li{display:flex;gap:12px;align-items:flex-start;color:#f4fafc}
+  .feature li::before{content:"◆";color:var(--gold);font-size:.8rem;margin-top:5px}
+  .feature .eyebrow{color:var(--gold-soft)}
+
+  /* Why */
+  .stats{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;max-width:900px;margin:0 auto}
+  @media(min-width:820px){.stats{grid-template-columns:repeat(4,1fr)}}
+  .stat{background:#fff;border:1px solid #d7e7ea;border-top:3px solid var(--gold);border-radius:12px;padding:22px 14px;text-align:center;box-shadow:var(--shadow)}
+  .stat .num{font-family:'Playfair Display',Georgia,serif;font-size:1.7rem;font-weight:700;color:var(--brand)}
+  .stat .lbl{font-size:.88rem;color:var(--muted);margin-top:4px}
+  .about-text{max-width:720px;margin:0 auto 40px;text-align:center;color:var(--muted)}
+  .about-text strong{color:var(--brand)}
+
+  /* Gallery */
+  .gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+  @media(min-width:820px){.gallery{grid-template-columns:repeat(3,1fr)}}
+  .gallery img{width:100%;height:210px;object-fit:cover;border-radius:12px}
+  @media(min-width:820px){.gallery img{height:250px}}
+
+  /* Visit */
+  .visit-grid{display:grid;grid-template-columns:1fr;gap:22px}
+  @media(min-width:820px){.visit-grid{grid-template-columns:1fr 1fr}}
+  .visit-card{background:#fff;border:1px solid #d7e7ea;border-radius:var(--radius);padding:28px;box-shadow:var(--shadow)}
+  .visit-card h3{color:var(--brand);font-size:1.3rem;margin-bottom:12px}
+  .visit-card p{color:var(--muted);margin-bottom:8px}
+  .visit-card p strong{color:var(--ink)}
+  .hours-row{display:flex;justify-content:space-between;border-bottom:1px dashed #cfe0e2;padding:9px 0;font-size:.98rem}
+  .hours-row:last-of-type{border-bottom:0}
+  .hours-row span:last-child{font-weight:600;color:var(--brand)}
+
+  /* Booking */
+  .booking{background:linear-gradient(180deg,var(--ivory),var(--cream))}
+  .form-card{background:#fff;border-radius:20px;box-shadow:0 18px 44px rgba(8,63,77,.16);border:1px solid #d7e7ea;max-width:680px;margin:0 auto;padding:34px 28px;transition:box-shadow .3s ease}
+  .form-card.flash{box-shadow:0 0 0 3px var(--gold),0 18px 44px rgba(8,63,77,.16)}
+  .form-grid{display:grid;grid-template-columns:1fr;gap:16px}
+  @media(min-width:620px){.form-grid{grid-template-columns:1fr 1fr}.form-grid .full{grid-column:1/-1}}
+  label{display:block;font-size:.86rem;font-weight:600;letter-spacing:.04em;color:var(--brand);margin-bottom:6px;text-transform:uppercase}
+  input,select{width:100%;padding:13px 14px;border:1.5px solid #cbdcdf;border-radius:10px;font-family:inherit;font-size:1rem;background:#fdffff;color:var(--ink)}
+  input:focus,select:focus{outline:none;border-color:var(--gold);box-shadow:0 0 0 3px rgba(223,174,94,.25)}
+  input.invalid,select.invalid{border-color:#c0392b;box-shadow:0 0 0 3px rgba(192,57,43,.15)}
+  .form-err{display:none;background:#fdecea;color:#922b21;border:1px solid #f5c6c0;border-radius:10px;padding:11px 14px;font-size:.92rem;margin-bottom:16px}
+  .form-note{text-align:center;color:var(--muted);font-size:.9rem;margin-top:14px}
+
+  /* Footer */
+  footer{background:var(--brand);color:#dceef1;padding:38px 0 30px;text-align:center}
+  footer .f-name{font-family:'Playfair Display',Georgia,serif;font-size:1.3rem;color:#fff}
+  footer p{font-size:.92rem;margin-top:6px}
+  footer .credit{margin-top:18px;font-size:.8rem;color:#a8c4cb;letter-spacing:.06em}
+  footer a{color:var(--gold-soft)}
+
+  /* Floating WhatsApp */
+  .wa-float{position:fixed;right:18px;bottom:18px;z-index:60;width:58px;height:58px;border-radius:50%;background:var(--wa);display:flex;align-items:center;justify-content:center;box-shadow:0 10px 24px rgba(0,0,0,.3)}
+  .wa-float:hover{background:var(--wa-dark)}
+  .wa-float svg{width:30px;height:30px;fill:#fff}
+  .nav-cta svg,.btn svg{width:19px;height:19px;fill:currentColor;flex:none}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#top">
+      <div class="b-name">Cloudnine <span>Beauty Salon</span></div>
+      <div class="b-sub">Wellawatte · Colombo</div>
+    </a>
+    <nav class="nav-links">
+      <a href="#services">Services</a>
+      <a href="#about">Why Us</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#visit">Visit Us</a>
+    </nav>
+    <a class="nav-cta" href="https://wa.me/94777803082?text=Hello%20Cloudnine%2C%20I%20would%20like%20to%20book%20an%20appointment." target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.2 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.4-.7-2.9-1.2-4.7-4.1-4.9-4.3-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.4.6-.4.5c-.1.1-.3.3-.1.6.2.3.8 1.4 1.8 2.2 1.2 1.1 2.3 1.5 2.6 1.6.3.1.5.1.7-.1l1-1.2c.2-.3.4-.2.7-.1l2.1 1c.3.2.5.3.6.4 0 .1 0 .7-.2 1.2z"/></svg>
+      WhatsApp Us
+    </a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="wrap hero-in">
+    <div class="eyebrow">Galle Road · Wellawatte · Colombo</div>
+    <h1>Cloudnine<br><em>Beauty Salon</em></h1>
+    <p class="hero-sub">Hair, skin, nails, waxing and makeup — everything you need to look and feel your best, in the heart of Wellawatte.</p>
+    <div>
+      <span class="badge"><span class="stars">★★★★★</span> 4.8 rated · 596 Google reviews</span>
+    </div>
+    <div class="hero-btns">
+      <a class="btn btn-wa" href="https://wa.me/94777803082?text=Hello%20Cloudnine%2C%20I%20would%20like%20to%20book%20an%20appointment." target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.2 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.4-.7-2.9-1.2-4.7-4.1-4.9-4.3-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.4.6-.4.5c-.1.1-.3.3-.1.6.2.3.8 1.4 1.8 2.2 1.2 1.1 2.3 1.5 2.6 1.6.3.1.5.1.7-.1l1-1.2c.2-.3.4-.2.7-.1l2.1 1c.3.2.5.3.6.4 0 .1 0 .7-.2 1.2z"/></svg>
+        Book on WhatsApp
+      </a>
+      <a class="btn btn-gold" href="#book">Book Appointment</a>
+      <a class="btn btn-call" href="tel:+94777803082">☎ 077 780 3082</a>
+    </div>
+    <p class="hero-note">Open every day · 8:30 AM – 7:00 PM</p>
+  </div>
+</section>
+
+<!-- TRUST STRIP -->
+<div class="strip">
+  <div class="wrap strip-in">
+    <div><strong>4.8 ★</strong> from 596 Google reviews</div>
+    <div><strong>On Galle Road</strong> — easy to find in Wellawatte</div>
+    <div><strong>Open 7 days</strong> — 8:30 AM to 7 PM</div>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section class="section" id="services">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">What We Do</div>
+      <h2>Our Services</h2>
+      <p>From everyday pampering to a full makeover — pick a service and book in seconds. Message us on WhatsApp for today's prices.</p>
+      <div class="gold-rule"></div>
+    </div>
+    <div class="grid">
+      <article class="card">
+        <img src="img/facial.jpg" alt="Facial treatment at Cloudnine" loading="lazy">
+        <div class="card-body">
+          <h3>Facials</h3>
+          <p>Refreshing facial treatments for fresh, healthy, glowing skin. Ask us on WhatsApp for today's price.</p>
+          <button class="btn btn-book" onclick="bookService('Facials')">Book This Service</button>
+        </div>
+      </article>
+      <article class="card">
+        <img src="img/threading.jpg" alt="Threading and brow shaping" loading="lazy">
+        <div class="card-body">
+          <h3>Threading</h3>
+          <p>Precise threading for brows and face — a clean, polished finish. Ask us on WhatsApp for today's price.</p>
+          <button class="btn btn-book" onclick="bookService('Threading')">Book This Service</button>
+        </div>
+      </article>
+      <article class="card">
+        <img src="img/hair.jpg" alt="Hair styling at Cloudnine" loading="lazy">
+        <div class="card-body">
+          <h3>Hair Services</h3>
+          <p>Cuts, styling and hair care for every hair type and every occasion. Ask us on WhatsApp for today's price.</p>
+          <button class="btn btn-book" onclick="bookService('Hair Services')">Book This Service</button>
+        </div>
+      </article>
+      <article class="card">
+        <img src="img/manicure.jpg" alt="Manicure with polished nails" loading="lazy">
+        <div class="card-body">
+          <h3>Manicure</h3>
+          <p>Complete hand and nail care with a perfect, lasting finish. Ask us on WhatsApp for today's price.</p>
+          <button class="btn btn-book" onclick="bookService('Manicure')">Book This Service</button>
+        </div>
+      </article>
+      <article class="card">
+        <img src="img/pedicure.jpg" alt="Pedicure treatment" loading="lazy">
+        <div class="card-body">
+          <h3>Pedicure</h3>
+          <p>Relaxing foot care and a flawless finish for your toes. Ask us on WhatsApp for today's price.</p>
+          <button class="btn btn-book" onclick="bookService('Pedicure')">Book This Service</button>
+        </div>
+      </article>
+      <article class="card">
+        <img src="img/waxing.jpg" alt="Waxing and spa treatment" loading="lazy">
+        <div class="card-body">
+          <h3>Waxing</h3>
+          <p>Smooth, gentle waxing for silky skin that lasts. Ask us on WhatsApp for today's price.</p>
+          <button class="btn btn-book" onclick="bookService('Waxing')">Book This Service</button>
+        </div>
+      </article>
+      <article class="card">
+        <img src="img/makeup.jpg" alt="Makeup being applied" loading="lazy">
+        <div class="card-body">
+          <h3>Makeup</h3>
+          <p>Polished makeup for parties, events and every special occasion. Ask us on WhatsApp for today's price.</p>
+          <button class="btn btn-book" onclick="bookService('Makeup')">Book This Service</button>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURE -->
+<section class="section feature" id="online">
+  <div class="wrap feature-in">
+    <div>
+      <img src="img/salon.jpg" alt="Inside Cloudnine Beauty Salon" loading="lazy">
+    </div>
+    <div>
+      <div class="eyebrow">Now Online</div>
+      <h2>Book Your Visit Online — For the First Time</h2>
+      <p>Cloudnine has always welcomed you in person on Galle Road. Now booking is even easier: choose your service, pick a date and time, and confirm on WhatsApp — all in under a minute.</p>
+      <ul>
+        <li>Choose from facials, hair, nails, waxing, threading &amp; makeup</li>
+        <li>Pick the day and time that suits you</li>
+        <li>Confirm instantly on WhatsApp — no queues, no calls</li>
+        <li>Open every day from 8:30 in the morning</li>
+      </ul>
+      <a class="btn btn-gold" href="#book">Book Appointment</a>
+    </div>
+  </div>
+</section>
+
+<!-- WHY / ABOUT -->
+<section class="section" id="about">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Why Cloudnine</div>
+      <h2>Loved in Wellawatte</h2>
+      <div class="gold-rule"></div>
+    </div>
+    <p class="about-text">On <strong>Galle Road in Wellawatte</strong>, Cloudnine Beauty Salon has earned a <strong>4.8-star rating from 596 Google reviews</strong> — loved for its full range of hair, skin, nail and makeup services under one roof, and open every single day. Whether it's a quick threading visit or a full pampering session, the team is ready to welcome you.</p>
+    <div class="stats">
+      <div class="stat"><div class="num">4.8 ★</div><div class="lbl">Google rating</div></div>
+      <div class="stat"><div class="num">596</div><div class="lbl">Google reviews</div></div>
+      <div class="stat"><div class="num">7</div><div class="lbl">Beauty services under one roof</div></div>
+      <div class="stat"><div class="num">7 days</div><div class="lbl">Open every day, 8:30 AM – 7 PM</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="section" id="gallery" style="padding-top:0">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Inside Cloudnine</div>
+      <h2>Gallery</h2>
+      <div class="gold-rule"></div>
+    </div>
+    <div class="gallery">
+      <img src="img/salon.jpg" alt="Salon interior" loading="lazy">
+      <img src="img/hair.jpg" alt="Hair styling in progress" loading="lazy">
+      <img src="img/facial.jpg" alt="Facial treatment" loading="lazy">
+      <img src="img/manicure.jpg" alt="Manicure detail" loading="lazy">
+      <img src="img/makeup.jpg" alt="Makeup application" loading="lazy">
+      <img src="img/pedicure.jpg" alt="Pedicure treatment" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<!-- VISIT -->
+<section class="section" id="visit" style="padding-top:0">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Find Us</div>
+      <h2>Visit Us</h2>
+      <div class="gold-rule"></div>
+    </div>
+    <div class="visit-grid">
+      <div class="visit-card">
+        <h3>📍 Our Salon</h3>
+        <p><strong>Cloudnine Beauty Salon</strong><br>67 W.A. Silva Mawatha, Galle Road,<br>Wellawatte, Colombo 00600</p>
+        <p><strong>Phone / WhatsApp</strong><br><a href="tel:+94777803082">077 780 3082</a></p>
+      </div>
+      <div class="visit-card">
+        <h3>🕣 Opening Hours</h3>
+        <div class="hours-row"><span>Monday</span><span>8:30 AM – 7:00 PM</span></div>
+        <div class="hours-row"><span>Tuesday</span><span>8:30 AM – 7:00 PM</span></div>
+        <div class="hours-row"><span>Wednesday</span><span>8:30 AM – 7:00 PM</span></div>
+        <div class="hours-row"><span>Thursday</span><span>8:30 AM – 7:00 PM</span></div>
+        <div class="hours-row"><span>Friday</span><span>8:30 AM – 7:00 PM</span></div>
+        <div class="hours-row"><span>Saturday</span><span>8:30 AM – 7:00 PM</span></div>
+        <div class="hours-row"><span>Sunday</span><span>8:30 AM – 7:00 PM</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BOOKING -->
+<section class="section booking" id="book">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Reserve Your Visit</div>
+      <h2>Book an Appointment</h2>
+      <p>Fill in your details — we'll open WhatsApp with your booking ready to send to the salon.</p>
+      <div class="gold-rule"></div>
+    </div>
+    <form class="form-card" id="bookingForm" novalidate>
+      <div class="form-err" id="formErr">Please fill in all the fields so we can book you in.</div>
+      <div class="form-grid">
+        <div>
+          <label for="bkName">Your Name</label>
+          <input type="text" id="bkName" placeholder="e.g. Nimalka Fernando" autocomplete="name">
+        </div>
+        <div>
+          <label for="bkPhone">Your Phone</label>
+          <input type="tel" id="bkPhone" placeholder="07X XXX XXXX" autocomplete="tel">
+        </div>
+        <div class="full">
+          <label for="bkService">Select Service</label>
+          <select id="bkService">
+            <option value="">— Choose a service —</option>
+            <option>Facials</option>
+            <option>Threading</option>
+            <option>Hair Services</option>
+            <option>Manicure</option>
+            <option>Pedicure</option>
+            <option>Waxing</option>
+            <option>Makeup</option>
+          </select>
+        </div>
+        <div>
+          <label for="bkDate">Select Date</label>
+          <input type="date" id="bkDate">
+        </div>
+        <div>
+          <label for="bkTime">Select Time</label>
+          <select id="bkTime">
+            <option value="">— Choose a time —</option>
+            <option>9:00 AM</option>
+            <option>10:00 AM</option>
+            <option>11:00 AM</option>
+            <option>12:00 PM</option>
+            <option>1:00 PM</option>
+            <option>2:00 PM</option>
+            <option>3:00 PM</option>
+            <option>4:00 PM</option>
+            <option>5:00 PM</option>
+            <option>6:00 PM</option>
+          </select>
+        </div>
+        <div class="full">
+          <button type="submit" class="btn btn-wa" style="width:100%">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.2 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.4-.7-2.9-1.2-4.7-4.1-4.9-4.3-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.4.6-.4.5c-.1.1-.3.3-.1.6.2.3.8 1.4 1.8 2.2 1.2 1.1 2.3 1.5 2.6 1.6.3.1.5.1.7-.1l1-1.2c.2-.3.4-.2.7-.1l2.1 1c.3.2.5.3.6.4 0 .1 0 .7-.2 1.2z"/></svg>
+            Book on WhatsApp
+          </button>
+          <p class="form-note">Your booking opens in WhatsApp — just press send there to confirm with the salon.</p>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="f-name">Cloudnine Beauty Salon</div>
+    <p>67 W.A. Silva Mawatha, Galle Road, Wellawatte, Colombo 00600 · <a href="tel:+94777803082">077 780 3082</a> · Open daily 8:30 AM – 7 PM</p>
+    <p class="credit">Sample website built by Qodra Dev</p>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/94777803082?text=Hello%20Cloudnine%2C%20I%20would%20like%20to%20book%20an%20appointment." target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.2 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.4-.7-2.9-1.2-4.7-4.1-4.9-4.3-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.4.6-.4.5c-.1.1-.3.3-.1.6.2.3.8 1.4 1.8 2.2 1.2 1.1 2.3 1.5 2.6 1.6.3.1.5.1.7-.1l1-1.2c.2-.3.4-.2.7-.1l2.1 1c.3.2.5.3.6.4 0 .1 0 .7-.2 1.2z"/></svg>
+</a>
+
+<script>
+  // Booking: date picker cannot be in the past
+  var bkDate = document.getElementById('bkDate');
+  var today = new Date();
+  var iso = today.getFullYear() + '-' + String(today.getMonth()+1).padStart(2,'0') + '-' + String(today.getDate()).padStart(2,'0');
+  bkDate.min = iso;
+
+  // Every service's Book button: pre-select the service, then smooth-scroll to the form
+  function bookService(service){
+    var sel = document.getElementById('bkService');
+    for (var i = 0; i < sel.options.length; i++){
+      if (sel.options[i].text === service || sel.options[i].value === service){ sel.selectedIndex = i; break; }
+    }
+    var card = document.getElementById('bookingForm');
+    document.getElementById('book').scrollIntoView({behavior:'smooth'});
+    card.classList.add('flash');
+    setTimeout(function(){ card.classList.remove('flash'); }, 1600);
+    setTimeout(function(){ document.getElementById('bkName').focus({preventScroll:true}); }, 700);
+  }
+
+  // Validate, then open WhatsApp with the booking prefilled
+  document.getElementById('bookingForm').addEventListener('submit', function(e){
+    e.preventDefault();
+    var fields = {
+      name: document.getElementById('bkName'),
+      phone: document.getElementById('bkPhone'),
+      service: document.getElementById('bkService'),
+      date: document.getElementById('bkDate'),
+      time: document.getElementById('bkTime')
+    };
+    var ok = true;
+    Object.keys(fields).forEach(function(k){
+      var f = fields[k];
+      var bad = !f.value || !String(f.value).trim();
+      if (k === 'phone' && !bad && String(f.value).replace(/\D/g,'').length < 10) bad = true;
+      f.classList.toggle('invalid', bad);
+      if (bad) ok = false;
+    });
+    var err = document.getElementById('formErr');
+    if (!ok){ err.style.display = 'block'; err.scrollIntoView({behavior:'smooth', block:'center'}); return; }
+    err.style.display = 'none';
+
+    var d = new Date(fields.date.value + 'T00:00:00');
+    var niceDate = d.toLocaleDateString('en-GB', {weekday:'long', day:'numeric', month:'long', year:'numeric'});
+    var msg = 'Hello Cloudnine Beauty Salon! I would like to book an appointment.\n'
+      + 'Name: ' + fields.name.value.trim() + '\n'
+      + 'Phone: ' + fields.phone.value.trim() + '\n'
+      + 'Service: ' + fields.service.value + '\n'
+      + 'Date: ' + niceDate + '\n'
+      + 'Time: ' + fields.time.value;
+    window.open('https://wa.me/94777803082?text=' + encodeURIComponent(msg), '_blank');
+  });
+</script>
+</body>
+</html>
